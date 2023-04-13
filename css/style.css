@@ -1,10 +1,55 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-header{
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+nav img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+}
+
+nav ul#menu-desktop {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul#menu-desktop li {
+    list-style-type: none;
+    display: inline;
+}
+
+nav ul#menu-desktop li a {
+    padding: 30px 40px;
+    text-decoration: none;
+    color: #FFF;
+    display: inline-block;
+    margin-right: -3px;
+    font-family: Roboto, sans-serif;
+    font-size: 80%;
+    letter-spacing: 0.60;
+}
+
+nav ul#menu-desktop li a:hover {
+    background-color: rgb(213, 26, 44, 1);
+}
+
+header {
     background-image: url(../img/foto-capa-pizza.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,21 +57,81 @@ header{
     height: 800px;
 }
 
-h1{
+h1 {
+    padding: 20%;
     text-align: center;
-    color: aliceblue;
+    color: rgb(172, 0, 0);
     font-weight: 900;
     font-size: 67px;
     font-family: 'Limelight', cursive;
     background-size: cover;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, 7px 15px 17px rgba(206, 0, 0, 0);
 }
 
-footer{
+#apresentacao {
+    width: 90%;
+    display: block;
+    max-width: 1500px;
+    min-width: 320px;
+    margin: 100px auto;
+}
+
+.pizza {
+    font-family: Roboto, sans-serif;
+    width: 30%;
+    float: left;
+    background-color: #FFF;
+    box-shadow: 0 0 10px #666;
+    border-radius: 7px;
+}
+
+.pizza img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: top center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.pizza h3{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.pizza p{
+    text-align: center;
+    padding: 5%;
+    margin-top: 1%;
+    color: #666;
+    font-size: 90%;
+}
+
+.pizza a{
+    display: block;
+    text-align: center;
+    background-color: rgb(213, 26, 44, 1);
+    color: white;
+    padding: 3%;
+    text-decoration: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.direita{
+    float: right;
+}
+
+.centro{
+    margin-left: 5%;
+}
+
+footer {
     height: 50px;
-    background-color: rgb(204, 147, 100);
+    background-color: rgb(197, 121, 34);
 }
 
-footer p{
+footer p {
     font-weight: 600px;
     color: aliceblue;
     padding: 17px;
